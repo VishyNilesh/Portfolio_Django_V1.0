@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "body.css"%}">
+    <link rel="stylesheet" href="{% static "bootstrap.css"%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script type="text/javascript" src="{% static "javascript/portfolio.js" %}"></script>
+  </head>
+  <body data-spy = 'scroll' data-target = '.navbar' data-offset='50'>
+      <div class="top_decoration fixed-top"></div>
+      <div id="bimg">
+        <img src="{% static "backstretch.jpg" %}"class="w-100 h-100 img-fluid" alt="image_copyright_jordy_ruiter">
+      </div>
+      <div class="carousel-caption" style="height: 435px;">
+        <h1 id=myname class="text-center">Nilesh Kumar</h1>
+        <hr>
+      </div>
+        <div class="carousel-caption" style="height: 300px; font-weight: 300;">
+          <h4 id="designation">SOFTWARE ENGINEER</h4>
+        </div>
+        <nav class ="navbar navbar-expand-sm navbar-dark sticky-top" id="stickylinks" role="navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+           <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
+               <li class="nav-item"> <a href="#aboutme" class="navigation nav-link active" id="a" onclick="aboutme()">ABOUT ME</a></li>
+               <li class="nav-item"> <a href="#skills" class="navigation nav-link active" id="sk" onclick="skills()">SKILLS</a></li>
+               <li class="nav-item"> <a href="#exp" class="navigation nav-link active" id="ex" onclick="exp()">EXPERIENCE</a></li>
+               <li class="nav-item"> <a href="#edu" class="navigation nav-link active" id="ed" onclick="edu()" >EDUCATION</a></li>
+               <li class="nav-item"> <a href="#cv" class="navigation nav-link active" id="p" onclick="por()">PORTFOLIO</a></li>
+               <li class="nav-item"> <a href="#contact" class="navigation nav-link active" id="c" onclick="cont()">CONTACT</a></li>
+           </ul>
+       </nav>
+        <div class="sub_sections_aboutme " id="aboutme">
+              <h2>ABOUT ME</h2>
+              <hr>
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <img src="{% static "portfolio-final.jpeg" %}" alt="" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <h4 class="text-uppercase font-weight-bold text-left">HI, IT's Me!</h4>
+                    <p class="text-left">I like building awesome software. I've built Websites, Web Applications,
+                      corporate software! If you are interested, you can view some of my favorite
+                      projects in my <a href="#cv">portfolio</a>down below.<br><br>Need something built or simply want to have chat? Reach
+                      out to me on social media or send me an <a href="#contact">email</a>.</p>
+                      <div id="social_tags">
+                        <a href=https://www.twitter.com class="bi bi-twitter" style="font-size: 2rem; color: cornflowerblue;"></a>
+                        <a href=https://github.com/VishyNilesh class="bi bi-github" style="font-size: 2rem; color: cornflowerblue;"></a>
+                        <a href=https://www.linkedin.com/in/nilesh-vishwakarma-010171159/ class="bi bi-linkedin" style="font-size: 2rem; color: cornflowerblue;"></a>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                      <h4 class="text-uppercase font-weight-bold text-left">My Personal Interests</h4>
+                      <p>When I am not coding my next project, I enjoy spending my time doing any of the following:
+                        <ul>
+                          <li>I love <strong>reading books.</strong></li>
+                          <li>I am watching my favorite game <strong>chess.</strong></li>
+                          <li>I am attending conferences virtually</li>
+                          <li>And I am <strong>meeting more people</strong> and creating new opportunities.</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="sub_sections_techskills " id="skills">
+              <h2>TECHINCAL SKILLS</h2>
+              <hr>
+              <p class="text-center col-lg-12">I've worked with a wide variety of programming languages. For web applications I use Python DJANGO and Javascript. Whenever I need the most performance possible I obviously go with Django Functions based views using python and finally when I am building prototypes or working on my hobby projects I fall back on Python again.</p>
+              <br>
+              <div class="container">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <h4>PYTHON</h4>
+                </li>
+                <li class="nav-item">
+                    <h4>DJANGO</h4>
+                </li>
+                <li class="nav-item">
+                    <h4>JAVASCRIPT</h4>
+                </li>
+                <li class="nav-item">
+                    <h4>jQuery</h4>
+                </li>
+                <li class="nav-item">
+                    <h4>MONGODB</h4>
+                </li>
+                <li class="nav-item">
+                    <h4>AWS</h4>
+                </li>
+                <li class="nav-item">
+                    <h4>HTML/CSS</h4>
+                </li>
+                <li class="nav-item">
+                    <h4>SQL</h4>
+                </li>
+                <li class="nav-item">
+                    <h4>APIs</h4>
+                </li>
+                <li class="nav-item">
+                    <h4>Jinja</h4>
+                </li>
+              </ul>
+            </div>
+            <h3>MOST FREQUENTLY USED TOOLS</h3>
+            <br>
+            <div class="container frameworks_engines">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h4>FRAMEWORKS & ENGINES</h4>
+                  <ul>
+                    <li>Django</li>
+                    <li>Django Rest Framework</li>
+                    <li>Bootstrap</li>
+                    <li>Pytest</li>
+                    <li>Selenium</li>
+                    <li>React.js</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <h4>SOFTWARES</h4>
+                  <ul>
+                    <li>Windows & Linux</li>
+                    <li>Git Bash</li>
+                    <li>Github</li>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>AWS</li>
+                    <li>Jira</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="sub_sections_experience " id="exp">
+          <h2>WORK EXPERIENCE</h2>
+          <hr>
+          <h3>SYSTEM ENGINEER</h3>
+          <p> FULL STACK<i class="bi bi-circle-fill" ></i>WEB SERVICES<i class="bi bi-circle-fill"></i>BACKEND DEVELOPMENT</p>
+          <br>
+          <p class="container">I've held two different positions in this company. From Assistant System Engineer to System Engineer as a full time employee in the web application development. I am responsible for developing high quality of WEB APPLICATION. I have Developed real world eCommerce web application using Python & Django.</p>
+          <p id="ctm"> <strong>Company</strong> :<span><a href="https://www.tcs.com/">TCS</a></span>  <strong>Period</strong>: May 2020 - August 2022</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\COOP\small sizes\Coop-Home_page.png"  %}" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#coopModal"></a></div>
+            <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt="" class="rounded-circle" data-toggle="modal" data-target="#coopModal"></a></div>
+            <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\COOP\small sizes\prods.png"  %}" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#coopModal"></a></div>
+            <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-2.png" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#coopModal"></a></div>
+          </div>
+          <br>
+          <hr>
+        </div>
+        <h3>ASSISTANT SYSTEM ENGINEER</h3>
+        <p> FRONT END<i class="bi bi-circle-fill" ></i>WEB DEVELOPMENT<i class="bi bi-circle-fill"></i>DATABASES</p>
+        <br>
+        <p class="container">I've held two different positions in this company. From Assistant System Engineer to System Engineer as a full time employee in the web application development. I am responsible for developing high quality of WEB APPLICATION. I have Developed real world eCommerce web application using Python & Django.</p>
+        <p id="ctm"> <strong>Company</strong> :<span><a href="https://www.tcs.com/">TCS</a></span>  <strong>Period</strong>: January 2019 - May 2020</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\WGSN\WGSN race login.png" %}" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#wgsnModal" style="width
+            :130px;height:130px"></a></div>
+          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-3.png" alt="" class="rounded-circle" data-toggle="modal" data-target="#wgsnModal"></a></div>
+          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\WGSN\Trends.png" %}" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#wgsnModal" style="width
+            :130px;height:130px"></a></div>
+          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="https://www.kaiwa-projects.com/assets/img/kaiwa-thumb-3.png" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#wgsnModal"></a></div>
+        </div>
+        <br>
+        <hr>
+      </div>
+      <h3>FREELANCE UI DEVELOPER</h3>
+      <p> WIREFRAME<i class="bi bi-circle-fill" ></i>UI SCREENS<i class="bi bi-circle-fill"></i>WEB DESIGNS</p>
+      <br>
+      <p class="container">Designed and developed the wireframes of the website and applications. A major responsibility was to design the wireframes.</p>
+<p id="ctm"> <strong>Company</strong> :<span> GREENOX TECHNOLOGIES / Thoughtcliff Technologies</span>  <strong>Period</strong>: April 2018 - May 2018</p>
+      <div class="container">
+      <br>
+        <hr>
+      </div>
+
+      <h3>UI/UX DESIGN INTERN</h3>
+      <p> USER INTERFACE <i class="bi bi-circle-fill" ></i>USER EXPERIENCES<i class="bi bi-circle-fill"></i>DESIGNS & TYPOGRAPHY</p>
+      <br>
+      <p class="container">Worked on Application Design.Designed the screens for Application for Android and IOS Responsive UI designs
+Designed Icons, Empty screens, Buttons, Banners, Gifts Page, Sticker, Updated the Logo.</p>
+    <p id="ctm"> <strong>Company</strong> :<span><a href="https://appadvice.com/game/app/unifie/1349096221">HEMISPHERE TECHNOCRATS / UNIFIE</a></span>  <strong>Period</strong>: April 2018 - May 2018</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\Unifie\Banners.png" %}" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#unifieModal" style="width
+            :130px;height:130px"></a></div>
+          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\Unifie\Overall.png" %}"alt="" class="rounded-circle" data-toggle="modal" data-target="#unifieModal" style="width
+            :130px;height:130px"></a></div>
+          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\Unifie\changed_logo_1.png" %}" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#unifieModal" style="width
+            :130px;height:130px"></a></div>
+          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\Unifie\Selfie-Challenge-_music.png" %}"alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#unifieModal" style="width
+            :130px;height:130px"></a></div>
+        </div>
+        <br>
+        <hr>
+        </div>
+      <h3>FRONT END DEVELOPER & UI INTERN</h3>
+      <p> FRONT END DEVELOPMENT<i class="bi bi-circle-fill" ></i>UI SCREENS<i class="bi bi-circle-fill"></i>BUG FIXING</p>
+      <br>
+      <p class="container">Was involved in front end design and developing of websites and extraction of UI. Worked on creating the dashboard designs, gameplay area.Responsive Web development debugging using Boot strap.</p>
+<p id="ctm"> <strong>Company</strong> :<span> <a href="https://www.myraatechnologies.com/">MYRAA</a> </span>  <strong>Period</strong>: November 2017 - December 2017</p>
+      <div class="container">
+        <div class="row">
+        </div>
+      </div>
+        <div class="sub_sections_experience education " id="edu">
+          <h2>EDUCATION</h2>
+          <hr>
+          <h3> UNIVERSITY OF MUMBAI</h3>
+          <p> <i class="bi bi-circle-fill" ></i>BACHELOR OF ENGINEERING IN COMPUTER SCIENCE - INFORMATION TECHNOLOGY</p>
+          <br>
+          <p class="container"> I studied Information technologies, Design & Development at the University of Mumbai. Here I have gained strong knowledge a wide variety of subjects including data structures, Operating Systems, Distributed Cloud computing.</p>
+          <p class="container"> <strong>Graduated : 2017 </strong> </p>
+        </div>
+        </div>
+        <div class="favprojects sub_sections_experience " id="cv">
+          <h2>SOME OF MY FAVOURITE PROJECTS</h2>
+          <hr>
+
+          <p> UI DESIGNS<i class="bi bi-circle-fill" ></i>UX DESIGNS<i class="bi bi-circle-fill"></i>BACKEND DEVELOPMENT<i class="bi bi-circle-fill"></i>APPLICATION DEVELOPMENT</p>
+          <br>
+          <div class="container">
+          <div class="row">
+            <div class="col-lg-2  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\COOP\small sizes\Coop-Home_page.png"  %}" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#coopModal"></a></div>
+            <div class="col-lg-2  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt="" class="rounded-circle" data-toggle="modal" data-target="#coopModal"></a></div>
+            <div class="col-lg-2  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\COOP\small sizes\prods.png"  %}" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#coopModal"></a></div>
+            <div class="col-lg-2  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-2.png" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#coopModal"></a></div>
+            <div class="col-lg-2  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\WGSN\WGSN race login.png" %}" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#wgsnModal" style="width
+              :130px;height:130px"></a></div>
+            <div class="col-lg-2  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-3.png" alt="" class="rounded-circle" data-toggle="modal" data-target="#wgsnModal"></a></div>
+            <div class="col-lg-2  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\WGSN\Trends.png" %}" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#wgsnModal" style="width
+              :130px;height:130px"></a></div>
+            <div class="col-lg-2  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="https://www.kaiwa-projects.com/assets/img/kaiwa-thumb-3.png" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#wgsnModal"></a></div>
+            <div class="col-lg-2  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\Unifie\Banners.png" %}" alt="" class="rounded-circle border border-dark" data-toggle="modal" data-target="#unifieModal" style="width
+              :130px;height:130px"></a></div>
+            <div class="col-lg-2  col-md-6 col-sm-12 p-3  projectsnaps"> <a href='#!'><img src="{% static "G:\Portfolio_Django\Portfolio\static\images\Unifie\Overall.png" %}"alt="" class="rounded-circle" data-toggle="modal" data-target="#unifieModal" style="width
+              :130px;height:130px"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="getintotouch " id="contact">
+        <h2>LET'S GET IN TOUCH</h2>
+        <hr>
+        {% if submitted %}
+        <div id="after_submit">
+          <p class="container">Thankyou for your kind message! We will connect very soon</p>
+          <p class="container">Incase of anything urgent you can reach me out on linkedin or my personal email vnilesh108@outlook.com</p>
+          <p class="container">Thanks, once again have a great day!</p>
+        </div>
+        {% else %}
+        <p class="container">Need anything built, want to work together or simply want to have a chat?</p>
+        <p class="container">Drop me an e-mail at vnilesh108@gmail.com or simply fill out the form below and I will reply to you soon!</p>
+        <form method="POST" class="getintotouch_form"  id ='form' novalidate>
+          {% csrf_token %}
+            <div class="form-group">
+            {{form.name}}
+            {{form.errors.name}}
+           </div>
+           <div class="form-group">
+             {{form.email}}
+             {{form.errors.email}}
+           </div>
+           <div class="form-group">
+            {{form.comment}}
+            {{form.errors.comment}}
+          </div>
+          <div class="form-group">
+                   <input class="btn btn-info p-2" type="submit" name="" value="SEND">
+           </div>
+          </form>
+          {% endif %}
+  </div>
+
+  <!--form  modal-->
+  <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="modal fade vw-100" id="coopModal" tabindex="-1" aria-labelledby="coopModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="coopModalLabel">CO-OP</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+                  <div class="modal-body">
+                    <div id="carouselcoopControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\COOP\Coop-Home_page.png" %}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\COOP\Coop-pagination.png" %}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\COOP\Coop-Products.png" %}" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\COOP\Search_nearby_store.png" %}" class="d-block " alt="...">
+                        </div>
+                      </div>
+                     <button class="carousel-control-prev" type="button" data-target="#carouselcoopControls" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark"></span>
+                        <span class="sr-only">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-target="#carouselcoopControls" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark"></span>
+                        <span class="sr-only">Next</span>
+                      </button>
+                    </div>
+                  </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--wgsn modal-->
+  <div class="modal fade vw-100" id="wgsnModal" tabindex="-1" aria-labelledby="wgsnModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="wgsnModalLabel">WGSN-AN ASCENTIAL COMPANY</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+                  <div class="modal-body">
+                    <div id="carouselwgsnControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\WGSN\Trend forecasting.png" %}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\WGSN\Trends.png" %}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\WGSN\WGSN race login.png" %}" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\WGSN\Wgsn racetool login.png" %}" class="d-block " alt="...">
+                        </div>
+                      </div>
+                     <button class="carousel-control-prev" type="button" data-target="#carouselwgsnControls" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark"></span>
+                        <span class="sr-only">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-target="#carouselwgsnControls" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark"></span>
+                        <span class="sr-only">Next</span>
+                      </button>
+                    </div>
+                  </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--unifie modal-->
+  <div class="modal fade vw-100" id="unifieModal" tabindex="-1" aria-labelledby="unifieModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="unifieModalLabel">UNIFIE | HEMISPHERE TECHNOCRATS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+                  <div class="modal-body">
+                    <div id="carouselunifieControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\Unifie\Overall.png" %}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\Unifie\Selfie-Challenge-_music.png" %}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\Unifie\Banners.png" %}" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static "G:\Portfolio_Django\Portfolio\static\images\Unifie\changed_logo_1.png" %}" class="d-block " alt="...">
+                        </div>
+                      </div>
+                     <button class="carousel-control-prev" type="button" data-target="#carouselunifieControls" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark"></span>
+                        <span class="sr-only">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-target="#carouselunifieControls" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark"></span>
+                        <span class="sr-only">Next</span>
+                      </button>
+                    </div>
+                  </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="{% static "bootstrap.js" %}"></script>
+      <script type="text/javascript">
+      var navLink=document.querySelectorAll('.navigation')
+      for (x of navLink) {
+      document.documentElement.style.scrollBehavior = "smooth";
+      }
+      </script>
+  </body>
+
+</html>

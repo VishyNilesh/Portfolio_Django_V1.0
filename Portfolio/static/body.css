@@ -1,0 +1,249 @@
+:root {
+  --sucess-color:#2ecc71;
+  --error-color: white;
+}
+#bimg {
+height: 620px;
+}
+.top_decoration{
+background-image:url("head_image.png");
+height: 10px;
+}
+#myname{
+  font-size:3.750em;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+hr{
+  background-color: #5b9bbc;
+  width: 336px;
+  height: 3px;
+  padding: 1px;
+}
+#designation{
+  font-size: 1.875em;
+  line-height: 1.0em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+a{
+  padding-top: 2px;
+  font-size: 0.904em;
+  letter-spacing: 0.1em;
+  margin-right: 10px;
+}
+
+.navigation:hover{
+  color: white;
+  text-decoration: none;
+}
+.sub_sections_aboutme{
+padding-top: 60px;
+text-align: center;
+margin-top: 20px;
+font-size: 2.250em;
+letter-spacing:0.1em;
+color: #404040;
+}
+.sub_sections_aboutme hr{
+  background: lightgrey;
+  margin-bottom: 50px;
+}
+.sub_sections_aboutme h2{
+  font-weight: 300;
+}
+.row h4{
+  font-size: 0.5em;
+  letter-spacing: 0.1em;
+  padding-bottom: 15px;
+}
+h4+p{
+font-size: 0.5em;
+letter-spacing: 0em;
+text-align: left;
+}
+p a{
+  letter-spacing: 0em;
+}
+h4+p+ul{
+font-size: 0.5em;
+letter-spacing: 0em;
+text-align: left;
+}
+#social_tags{
+  text-align: left;
+}
+.sub_sections_techskills{
+text-align: center;
+margin-top: 100px;
+font-size: 2.250em;
+letter-spacing:0.1em;
+color: #0f1025;
+background: #eee;
+}
+.sub_sections_techskills hr{
+  background: #f08b65;
+  margin-bottom: 50px;
+}
+.sub_sections_techskills h2{
+  padding-top: 70px;
+  font-weight: 300;
+}
+.sub_sections_techskills p{
+  font-size: 0.5em;
+  letter-spacing: 0em;
+}
+.sub_sections_techskills ul li{
+  margin :auto;
+  width: auto;
+}
+.sub_sections_techskills ul{
+  margin : 0px 100px 50px 100px;
+}
+.sub_sections_techskills h4{
+  font-size: 0.5em;
+  letter-spacing: 0em;
+}
+.frameworks_engines h4+ul li{
+  font-size: 0.5em;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 100px;
+}
+.sub_sections_experience hr{
+  background: #e76270;;
+  margin-bottom: 50px;
+}
+.sub_sections_experience h2{
+  padding-top: 70px;
+  font-weight: 300;
+  text-align: center;
+  font-size: 2.250em;
+  letter-spacing:0.1em;
+}
+.sub_sections_experience h3{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+}
+.sub_sections_experience p{
+  text-align: center;
+  letter-spacing: 0.15em;
+  display: block;
+}
+.sub_sections_experience i{
+  color: #e76270;
+  font-size: 11px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sub_sections_experience br+p{
+  font-size: 1em;
+  letter-spacing: 0em;
+}
+.sub_sections_experience span{
+  padding-right: 300px;
+
+}
+.sub_sections_experience #ctm{
+  letter-spacing: 0em;
+}
+ .sub_sections_experience br+hr{
+  width: 30px;
+  height: 3px;
+  background: #ccc;
+  border: 0.5px;
+}
+.education{
+  margin-top: 100px;
+  background: #eee;
+  padding-bottom: 50px;
+}
+.getintotouch{
+  text-align: center;
+  margin-top: 100px;
+  padding-top: 70px;
+}
+.getintotouch hr{
+  margin-bottom: 50px;
+}
+.getintotouch p{
+  width: 60%;
+  margin-bottom: auto;
+}
+form{
+  margin: auto;
+  margin-top: 12px;
+  width: 60%;
+  margin-bottom: 50px;
+}
+.getintotouch {
+  background-color: #0d2c5a;
+  color: white;
+
+}
+.getintotouch .getintotouch_form .form-group:nth-of-type(4)
+{
+  padding-bottom: 80px;
+  padding-top: 10px;
+}
+.getintotouch .getintotouch_form .btn {
+    width:78px;
+    background: #5b9bbc;
+}
+.getintotouch_form ::placeholder{
+  font-style: italic;
+}
+.getintotouch .getintotouch_form .form-group {
+  margin-bottom: 30px;
+}
+.getintotouch .getintotouch_form .form-group textarea{
+  resize: none;
+}
+#stickylinks {
+  justify-content: center;
+  height: 50px;
+  background-color: #0d2c5a;
+}
+#collapsibleNavbar{
+  background-color:#0d2c5a
+}
+.col-sm-12{
+  text-align: center;
+}
+.col-sm-6{
+  text-align: center;
+}
+#collapsibleNavbar{
+  justify-content: center;
+}
+small{
+  visibility: hidden;
+  position: absolute;
+  color: var(--error-color);
+  left: 270px;
+  margin-top: 5px;
+}
+.form-group input:focus{
+  outline:0;
+  border-color:blue;
+  border-width:medium;
+}
+input.success{
+  border-color: #2ecc71;
+}
+input.error{
+  border-color: #e74c3c;
+}
+input.error+small{
+  visibility: visible;
+  left: 270px;
+  margin-top: 5px;
+}
+html{height: 100%; }
