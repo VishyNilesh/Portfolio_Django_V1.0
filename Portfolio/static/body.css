@@ -12,14 +12,12 @@ height: 10px;
 #myname{
   font-size:3.750em;
   font-weight: 900;
-  color: white;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
 }
 hr{
   background-color: #5b9bbc;
-  width: 336px;
   height: 3px;
   padding: 1px;
 }
